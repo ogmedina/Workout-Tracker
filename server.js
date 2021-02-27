@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3000;
 
-//const User = require("./userModel.js");
 const app = express();
 
 app.use(logger("dev"));
@@ -14,16 +13,16 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+//Mongoose database conncection, db is called workout
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
  useNewUrlParser: true,
  useFindAndModify: false
 });
 
-//const htmlRoutes = require("./routes/html-routes.js");
-
 
 //HTML-Routes
 app.use(require("./routes/html-routes.js"));
+//API Routes
 app.use(require("./routes/api-routes.js"));
 
 app.listen(PORT, () => {
