@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+//schema for Workout
 const WorkoutSchema = new Schema({
     day: {
         type: Date,
@@ -9,13 +10,16 @@ const WorkoutSchema = new Schema({
     exercises: [
         {
             type: {
-                type: String
+                type: String,
+                required: true
             },
             name: {
-                type: String
+                type: String,
+                required: true
             },
             duration: {
-                type: Number
+                type: Number,
+                required: true
             },
             weight: {
                 type: Number                
@@ -30,11 +34,7 @@ const WorkoutSchema = new Schema({
                 type: Number
             }           
         }
-    ],
-    //Duration still not working, need to figure out 
-    totalDuration: {
-        type: Number
-    }
+    ]   
 });
 
 const Workout = mongoose.model("Workout", WorkoutSchema);

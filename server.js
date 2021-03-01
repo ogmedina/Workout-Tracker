@@ -16,7 +16,9 @@ app.use(express.static("public"));
 //Mongoose database conncection, db is called workout
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
  useNewUrlParser: true,
- useFindAndModify: false
+ useUnifiedTopology: true,
+ useFindAndModify: false,
+ useCreateIndex: true
 });
 
 
