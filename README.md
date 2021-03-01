@@ -32,8 +32,8 @@ npm run start -OR- node server.js
 The app is hosted using Heroku here at this link: (COMING SOON!) [Heroku Hosted Site]()
 
 ### Screenshots 
-![WorkoutTracker1]()
-![WorkoutTracker2]()
+![WorkoutTracker1](https://github.com/ogmedina/Workout-Tracker/blob/main/assets/fitnesstracker1.jpg)
+![WorkoutTracker2](https://github.com/ogmedina/Workout-Tracker/blob/main/assets/fitnesstracker2.jpg)
 
 ### License
 This project is licensed under the MIT License. 
