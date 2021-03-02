@@ -37,7 +37,7 @@ router.post("/api/workouts", ({ body }, res) => {
         })
 });
 
-//Put workouts by ID into the database by ID, $push places it into the array at exercises of what the body was
+//Put workouts by ID into the database by ID, $push places it into the array at exercises of what was entered
 router.put("/api/workouts/:id", (req, res) => {
     db.Workout.findByIdAndUpdate(
         req.params.id,
@@ -58,6 +58,7 @@ router.put("/api/workouts/:id", (req, res) => {
 router.get("/api/workouts/range", (req, res) => {
     console.log("finding all workouts with range?")
     db.Workout.aggregate([
+        { $limit: 7 },
         {
             $addFields: {
                 totalDuration: {
