@@ -29,7 +29,7 @@ The program can then be run using the following command line in the bash termina
 npm run start -OR- node server.js
 ```
 ### Hosted
-The app is hosted using Heroku here at this link: (COMING SOON!) [Heroku Hosted Site]()
+The app is hosted using Heroku here at this link: [Heroku Hosted Site](https://still-thicket-89458.herokuapp.com/)
 
 ### Screenshots 
 ![WorkoutTracker1](https://github.com/ogmedina/Workout-Tracker/blob/main/assets/fitnesstracker1.jpg)
@@ -50,6 +50,7 @@ Back End:
 * [MongoDB](https://www.mongodb.com/)
 * [Mongoose.js](https://www.mongoosejs.com/)
 * [Morgan NPM](https://www.npmjs.com/package/morgan)
+* [Mongojs](https://www.npmjs.com/package/mongojs)
 * [Heroku](https://www.heroku.com)
 
 ### Questions
